@@ -1,4 +1,9 @@
 {
 	"cmd"		: ["bash", "$file"],
-	"selector"	: "source.shell"
+	"selector"	: "source.shell",
+
+	"windows": {
+		"path"	: "$path;c:\\mingw\\bin;c:\\mingw\\msys\\1.0\\bin",
+		"cmd"	: ["bash", "--login", "-i", "-c", "cd \"$file_path\"; \"$file\""]
+	}
 }
